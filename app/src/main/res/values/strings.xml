@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TalkToMe</string>
+    <string name="password">password</string>
+    <string name="email">Email</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="already_have_an_account">Already have an account</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="username">Name</string>
+    <string name="register">register</string>
+</resources>
