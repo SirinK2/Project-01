@@ -1,13 +1,11 @@
 package com.tuwaiq.talktome.app.auth
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.tuwaiq.talktome.R
 import com.tuwaiq.talktome.databinding.SignInFragmentBinding
 import dagger.hilt.android.AndroidEntryPoint
 

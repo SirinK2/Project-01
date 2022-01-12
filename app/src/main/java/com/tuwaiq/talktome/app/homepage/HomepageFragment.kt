@@ -6,14 +6,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
 import com.tuwaiq.talktome.R
 import com.tuwaiq.talktome.databinding.HomepageFragmentBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class HomepageFragment : Fragment() {
 
 
 
-    private lateinit var viewModel: HomepageViewModel
+    private val viewModel by viewModels<HomepageViewModel>()
     private lateinit var binding: HomepageFragmentBinding
 
     override fun onCreateView(

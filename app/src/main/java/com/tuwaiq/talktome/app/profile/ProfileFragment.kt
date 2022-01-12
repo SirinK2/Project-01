@@ -1,19 +1,20 @@
 package com.tuwaiq.talktome.app.profile
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.tuwaiq.talktome.R
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import com.tuwaiq.talktome.databinding.ProfileFragmentBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class ProfileFragment : Fragment() {
 
 
 
-    private lateinit var viewModel: ProfileViewModel
+    private val viewModel by viewModels<ProfileViewModel>()
 
     lateinit var binding: ProfileFragmentBinding
 

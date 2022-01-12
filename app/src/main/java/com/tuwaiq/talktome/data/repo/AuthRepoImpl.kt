@@ -19,7 +19,8 @@ class AuthRepoImpl:AuthRepo {
     override fun signIn(email: String, password: String) {
         auth.signInWithEmailAndPassword(
             email,
-            password)
+            password
+        )
     }
 
 

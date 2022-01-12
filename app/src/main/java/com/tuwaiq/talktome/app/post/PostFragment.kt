@@ -1,21 +1,25 @@
 package com.tuwaiq.talktome.app.post
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.tuwaiq.talktome.R
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import com.tuwaiq.talktome.databinding.PostFragmentBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class PostFragment : Fragment() {
 
 
 
-    private lateinit var viewModel: PostViewModel
+    private val viewModel by viewModels<PostViewModel>()
 
     private lateinit var binding: PostFragmentBinding
+
+
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
