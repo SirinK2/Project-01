@@ -73,4 +73,7 @@ dependencies {
 
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2-native-mt'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
+
+    //Lottie Animations
+    implementation "com.airbnb.android:lottie:4.2.2"
 }

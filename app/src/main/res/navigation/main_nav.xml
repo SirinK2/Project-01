@@ -14,15 +14,40 @@
         android:id="@+id/signInFragment"
         android:name="com.tuwaiq.talktome.app.auth.SignInFragment"
         android:label="sign_in_fragment"
-        tools:layout="@layout/sign_in_fragment" />
+        tools:layout="@layout/sign_in_fragment" >
+        <action
+            android:id="@+id/action_signInFragment_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+    </fragment>
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.tuwaiq.talktome.app.auth.RegisterFragment"
         android:label="register_fragment"
-        tools:layout="@layout/register_fragment" />
+        tools:layout="@layout/register_fragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_homepageFragment"
+            app:destination="@id/homepageFragment" />
+    </fragment>
     <fragment
         android:id="@+id/homepageFragment"
         android:name="com.tuwaiq.talktome.app.homepage.HomepageFragment"
         android:label="homepage_fragment"
-        tools:layout="@layout/homepage_fragment" />
+        tools:layout="@layout/homepage_fragment" >
+        <action
+            android:id="@+id/action_homepageFragment_to_postFragment"
+            app:destination="@id/postFragment" />
+        <action
+            android:id="@+id/action_homepageFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.tuwaiq.talktome.app.post.PostFragment"
+        android:label="post_fragment"
+        tools:layout="@layout/post_fragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.tuwaiq.talktome.app.profile.ProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/profile_fragment" />
 </navigation>
