@@ -26,6 +26,7 @@
         android:foreground="@drawable/card_edge"
         app:strokeColor="@color/colorGradientCenter"
         app:strokeWidth="2dp"
+        app:cardCornerRadius="20dp"
         android:backgroundTint="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/btn_signIn"
         app:layout_constraintEnd_toEndOf="parent"

@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/sign_up_layout"
+    android:id="@+id/register_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_list"
@@ -20,11 +20,11 @@
         android:layout_marginEnd="56dp"
         android:backgroundTint="@color/colorGradientRoyalBlue"
         android:elevation="5dp"
-        app:cardCornerRadius="4dp"
+        app:cardCornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:strokeColor="@color/white"
+        app:strokeColor="@color/colorGradientCenter"
         app:strokeWidth="2dp">
 
 
@@ -56,7 +56,6 @@
                     android:textColorHint="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/iv_logo"
                     tools:ignore="MissingConstraints" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -64,9 +63,9 @@
             <View
                 android:id="@+id/divider5"
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
+                android:layout_height="2dp"
                 android:background="@color/white"
-                android:backgroundTint="@color/white" />
+                android:backgroundTint="@color/colorGradientCenter" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -94,9 +93,9 @@
             <View
                 android:id="@+id/divider4"
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
+                android:layout_height="2dp"
                 android:background="@color/white"
-                android:backgroundTint="@color/white" />
+                android:backgroundTint="@color/colorGradientCenter" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -125,9 +124,9 @@
             <View
                 android:id="@+id/divider3"
                 android:layout_width="match_parent"
-                android:layout_height="5dp"
+                android:layout_height="2dp"
                 android:background="@color/white"
-                android:backgroundTint="@color/white" />
+                android:backgroundTint="@color/colorGradientCenter" />
 
 
         </LinearLayout>
