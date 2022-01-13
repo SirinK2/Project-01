@@ -9,6 +9,21 @@
     tools:context=".app.auth.SignInFragment">
 
 
+    <com.google.android.material.imageview.ShapeableImageView
+
+        android:id="@+id/iv_logo"
+        android:layout_width="189dp"
+        android:layout_height="151dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="25dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/materialCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/round_imageview"
+        app:srcCompat="@drawable/logo_talk"/>
 
 
     <com.google.android.material.card.MaterialCardView
