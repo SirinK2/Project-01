@@ -1,14 +1,14 @@
 # Project-01
-This is a timeline application were users can register and then login to post a text or an image, each user has a name or a picture.
+This app is called TalkToMe were users can register and then login to post a text or an image.
 
 ## **Requirements**
 
 The user shall be able to Sign Up.
 The user shall be able to Log In.
 The user shall be able to post [text or image].
-The user shall be able to view all the posts from different users (Timeline) Use firebase for this project or any other service providers
-Colorful background
-Easy navigations
+The user shall be able to view all the posts from different users (Timeline) Use firebase for this project or any other service providers,
+Colorful background, and 
+Easy navigations.
 
 ## **ScreenShot**
 
