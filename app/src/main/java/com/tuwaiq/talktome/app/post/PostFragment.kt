@@ -24,16 +24,8 @@ class PostFragment : Fragment() {
 
     private lateinit var binding: PostFragmentBinding
 
-    private lateinit var uriList: List<Uri>
 
-    private lateinit var urlList: List<String>
 
-    private val photosReg =
-        registerForActivityResult(
-            ActivityResultContracts
-                .OpenMultipleDocuments()){
-                uriList = it
-        }
 
 
 
@@ -54,23 +46,17 @@ class PostFragment : Fragment() {
     override fun onStart() {
         super.onStart()
 
-        binding.ivAddPic.setOnClickListener {
-            photosReg.launch(arrayOf("image/*"))
-        }
+
 
         binding.btnPost.setOnClickListener {
             val postText = binding.etAddPost.text.toString()
             val postDate = Date().toString()
             val postOwner = Firebase.auth.currentUser?.uid.toString()
-            viewModel.uploadPhotos(uriList).observe(
-                viewLifecycleOwner, {
-                    urlList = it
 
-                    val post = Post(postText,urlList,postDate,postOwner)
-
+                    val post = Post(postText,postDate,postOwner)
                     viewModel.addPost(post)
-                }
-            )
+
+
         }
 
     }

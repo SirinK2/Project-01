@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.Menu
 import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
@@ -19,6 +20,8 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var logo: ImageView
     private lateinit var tvTitle: TextView
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

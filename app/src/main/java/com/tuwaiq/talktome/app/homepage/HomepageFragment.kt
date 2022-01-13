@@ -1,8 +1,7 @@
 package com.tuwaiq.talktome.app.homepage
 
-import android.graphics.drawable.AnimationDrawable
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -14,10 +13,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.tuwaiq.talktome.R
 import com.tuwaiq.talktome.databinding.HomepageFragmentBinding
 import com.tuwaiq.talktome.databinding.HomepageListItemBinding
-import com.tuwaiq.talktome.domain.model.Like
 import com.tuwaiq.talktome.domain.model.Post
 import dagger.hilt.android.AndroidEntryPoint
 
+private const val TAG = "HomepageFragment"
 @AndroidEntryPoint
 class HomepageFragment : Fragment() {
 
@@ -41,6 +40,7 @@ class HomepageFragment : Fragment() {
         viewModel.getPost().observe(
             viewLifecycleOwner, {
                 binding.recyclerView.adapter = HomepageAdapter(it)
+                Log.e(TAG, "onViewCreated: $it", )
             }
         )
 
@@ -50,8 +50,7 @@ class HomepageFragment : Fragment() {
     override fun onStart() {
         super.onStart()
 
-        binding.bottomNavigation.background = null
-        binding.bottomNavigation.menu.getItem(2).isEnabled = false
+
         binding.addPostFloatingActionButton.setOnClickListener {
             findNavController().navigate(R.id.postFragment)
         }
@@ -62,23 +61,15 @@ class HomepageFragment : Fragment() {
 
 
 
-    private inner class HomepageHolder(val binding: HomepageListItemBinding):RecyclerView.ViewHolder(binding.root),View.OnClickListener{
+    private inner class HomepageHolder(val binding: HomepageListItemBinding):RecyclerView.ViewHolder(binding.root){
         fun bind(post: Post){
-            val like = Like()
             binding.tvName.text = post.postOwner
             binding.tvDescription.text = post.postText
 
-            binding.tvLikeNumbers.text = like.likes.size.toString()
-
 
         }
 
-        override fun onClick(v: View?) {
-            if (v == binding.ivLike){
 
-            }
-
-        }
 
     }
 
