@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "92515571241",
+    "project_id": "talktome-c30b7",
+    "storage_bucket": "talktome-c30b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92515571241:android:1dc4b104d8791d0efcee38",
+        "android_client_info": {
+          "package_name": "com.tuwaiq.talktome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92515571241-pspjprlgod69grdevigtkcd55iebj800.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSH9lQq61oWBv40KpXAiNWMn0pJBtf00U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92515571241-pspjprlgod69grdevigtkcd55iebj800.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
