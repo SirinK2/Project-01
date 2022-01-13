@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import coil.load
 import com.tuwaiq.talktome.databinding.HomepageListItemBinding
 import com.tuwaiq.talktome.databinding.ProfileFragmentBinding
 import com.tuwaiq.talktome.domain.model.Post
@@ -49,9 +48,7 @@ class ProfileFragment : Fragment() {
         fun bind(post: Post){
             binding.tvName.text = post.postOwner
             binding.tvDescription.text = post.postText
-            post.postPhotos.forEach {
-                binding.ivPic.load(it)
-            }
+
 
         }
 
