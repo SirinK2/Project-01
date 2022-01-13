@@ -83,7 +83,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
                 android:background="@color/white"
-                android:backgroundTint="@color/colorGradientCenter" />
+                android:backgroundTint="@color/colorGradientCenter"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
