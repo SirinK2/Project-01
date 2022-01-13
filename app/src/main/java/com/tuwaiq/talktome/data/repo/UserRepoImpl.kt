@@ -12,8 +12,9 @@ class UserRepoImpl:UserRepo {
     private val userCollectionRef = Firebase.firestore.collection(USER_COLLECTION)
 
     override suspend fun addUser(user: User) {
-        user.userDoc = userCollectionRef.document().id
-        userCollectionRef.add(user)
+        val ref = userCollectionRef.document()
+        user.userDoc = ref.id
+        ref.set(user)
     }
 
     override suspend fun getUser(): List<User> =

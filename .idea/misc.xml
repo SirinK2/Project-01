@@ -3,18 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/FQaht/AndroidStudioProjects/Project-01/app/src/main/res/drawable/custom_button.xml" value="0.2703125" />
-        <entry key="..\:/Users/FQaht/AndroidStudioProjects/Project-01/app/src/main/res/drawable/gradient_center.xml" value="0.2703125" />
-        <entry key="..\:/Users/FQaht/AndroidStudioProjects/Project-01/app/src/main/res/drawable/gradient_one.xml" value="0.2703125" />
-        <entry key="..\:/Users/FQaht/AndroidStudioProjects/Project-01/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/FQaht/AndroidStudioProjects/Project-01/app/src/main/res/layout/homepage_fragment.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/FQaht/AndroidStudioProjects/Project-01/app/src/main/res/layout/homepage_list_item.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/FQaht/AndroidStudioProjects/Project-01/app/src/main/res/layout/post_fragment.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/FQaht/AndroidStudioProjects/Project-01/app/src/main/res/layout/profile_fragment.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/FQaht/AndroidStudioProjects/Project-01/app/src/main/res/layout/profile_list_item.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/FQaht/AndroidStudioProjects/Project-01/app/src/main/res/layout/register_fragment.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/FQaht/AndroidStudioProjects/Project-01/app/src/main/res/layout/sign_in_fragment.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/FQaht/AndroidStudioProjects/Project-01/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.25416666666666665" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/homepage_fragment.xml" value="0.10491803278688525" />
+        <entry key="app/src/main/res/layout/homepage_list_item.xml" value="0.27794871794871795" />
+        <entry key="app/src/main/res/layout/o_fragment.xml" value="0.2682291666666667" />
+        <entry key="app/src/main/res/layout/post_fragment.xml" value="0.27794871794871795" />
+        <entry key="app/src/main/res/layout/profile_fragment.xml" value="0.27794871794871795" />
+        <entry key="app/src/main/res/layout/profile_list_item.xml" value="0.27794871794871795" />
+        <entry key="app/src/main/res/layout/register_fragment.xml" value="0.11253774374983926" />
+        <entry key="app/src/main/res/layout/sign_in_fragment.xml" value="0.33923139999331015" />
+        <entry key="app/src/main/res/menu/bottom_navigation_menu.xml" value="0.27794871794871795" />
+        <entry key="app/src/main/res/xml/file.xml" value="0.27794871794871795" />
       </map>
     </option>
   </component>

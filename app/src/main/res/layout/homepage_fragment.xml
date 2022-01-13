@@ -37,14 +37,15 @@
         android:layout_marginStart="178dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="178dp"
-        app:layout_anchorGravity="center"
         app:backgroundTint="@color/colorGradientCenter"
         app:layout_anchor="@id/bottomAppBar"
+        app:layout_anchorGravity="center"
         app:layout_constraintBottom_toTopOf="@+id/bottomAppBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recyclerView"
-        app:srcCompat="@drawable/ic_baseline_add_24" />
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

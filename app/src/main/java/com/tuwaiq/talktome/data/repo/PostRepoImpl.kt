@@ -1,12 +1,15 @@
 package com.tuwaiq.talktome.data.repo
 
+import android.net.Uri
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import com.google.firebase.storage.ktx.storage
 import com.tuwaiq.talktome.domain.model.Comment
 import com.tuwaiq.talktome.domain.model.Like
 import com.tuwaiq.talktome.domain.model.Post
 import com.tuwaiq.talktome.domain.repo.PostRepo
 import kotlinx.coroutines.tasks.await
+import java.util.*
 
 private const val POST_COLLECTION = "post"
 private const val LIKE_COLLECTION = "like"
@@ -21,8 +24,9 @@ class PostRepoImpl:PostRepo {
 
     override suspend fun addPost(post: Post) {
 
-       post.postId = postCollectionRef.document().id
-        postCollectionRef.add(post)
+      val ref = postCollectionRef.document()
+        post.postId = ref.id
+        ref.set(post)
 
     }
 
@@ -56,6 +60,24 @@ class PostRepoImpl:PostRepo {
             .await()
             .toObjects(Comment::class.java)
 
+    override suspend fun uploadPhotos(uri: List<Uri>): List<String> {
+        val photosUri = mutableListOf<String>()
+        uri.forEach {
+            val fileName = "IMG_${UUID.randomUUID()}.jpg"
+            val photoRef = Firebase.storage.reference.child("post/$fileName")
+            val url = photoRef.putFile(it).continueWithTask { task ->
+                if (!task.isSuccessful){
+                    task.exception?.let { exp ->
+                        throw exp
+                    }
+                }
+                photoRef.downloadUrl
+
+            }.await()
+            photosUri += url.toString()
+        }
+        return photosUri
+    }
 
 
 }
