@@ -1,5 +1,6 @@
 package com.tuwaiq.talktome.app.homepage
 
+import android.graphics.drawable.AnimationDrawable
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,7 +11,6 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import coil.load
 import com.tuwaiq.talktome.R
 import com.tuwaiq.talktome.databinding.HomepageFragmentBinding
 import com.tuwaiq.talktome.databinding.HomepageListItemBinding
@@ -67,9 +67,7 @@ class HomepageFragment : Fragment() {
             val like = Like()
             binding.tvName.text = post.postOwner
             binding.tvDescription.text = post.postText
-            post.postPhotos.forEach {
-                binding.ivPic.load(it)
-            }
+
             binding.tvLikeNumbers.text = like.likes.size.toString()
 
 

@@ -54,12 +54,12 @@ class PostFragment : Fragment() {
     override fun onStart() {
         super.onStart()
 
-        binding.button.setOnClickListener {
+        binding.ivAddPic.setOnClickListener {
             photosReg.launch(arrayOf("image/*"))
         }
 
-        binding.button.setOnClickListener {
-            val postText = "Hello"
+        binding.btnPost.setOnClickListener {
+            val postText = binding.etAddPost.text.toString()
             val postDate = Date().toString()
             val postOwner = Firebase.auth.currentUser?.uid.toString()
             viewModel.uploadPhotos(uriList).observe(
